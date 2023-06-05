@@ -1,0 +1,42 @@
+
+<form>
+  <div class="mb-3">
+    <label for="name" class="form-label">name</label>
+    <input type="text" class="form-control" [(ngModel)]="name" name="name">
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">password</label>
+    <input type="text" class="form-control" [(ngModel)]="password" name="password">
+  </div>
+  <button (click)="addUser()"  class="btn btn-primary"><!-- *ngIf="!todos.id.includes(id)" -->
+    Add
+  </button>
+  <button (click)="updateUser()" class="btn btn-primary"><!-- *ngIf="todos.id.includes(id)" -->
+    Update
+  </button>
+</form>
+
+<form>
+  <div class="mb-3">
+    <label for="name" class="form-label">personId</label>
+    <input type="text" class="form-control" [(ngModel)]="personId" name="personId">
+  </div>
+  <div class="mb-3">
+    <label for="title" class="form-label">title</label>
+    <input type="text" class="form-control" [(ngModel)]="title" name="title">
+  </div>
+  <div class="mb-3">
+    <label for="title" class="form-label">description</label>
+    <input type="text" class="form-control" [(ngModel)]="description" name="description">
+  </div>
+  <div class="mb-3">
+    <label for="title" class="form-label">statusId</label>
+    <input type="text" class="form-control" [(ngModel)]="statusId" name="statusId">
+  </div>
+  <button (click)="addUser()"  class="btn btn-primary"><!-- *ngIf="!todos.id.includes(id)" -->
+    Add
+  </button>
+  <button (click)="updateUser()" class="btn btn-primary"><!-- *ngIf="todos.id.includes(id)" -->
+    Update
+  </button>
+</form>
